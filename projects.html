@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokce Onal's Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+<section id="home" class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Projects</h1>
+    <h5> Below are various projects I have worked on or are currently working on. </h5>
+  </div>
+  <div class="container border border-dark border-4 my-5">
+    <h2> The GScript Programming Language </h2>
+    <div class="container">
+      <p> Around my sophomore year of high school, I felt like I had learned enough programming skills to apply them to some major project. After
+        experimenting with creating websites, games, and various other things, I landed on creating my very own programming language as this "major task"
+        that I wanted to embark on. <br><br>
+        So, I began doing my research. I found a tutorial series on YouTube as well as some other supplemental websites that taught some different skills
+        about components I would need to know to actually make a proper programming language. Then, on and off through the next couple of months, I went ahead and
+        created the language. I would add on features as I went, working step by step. In fact, I even changed the base language I wrote my personal language in a couple
+        of times. First it was C, then Java, and I finally landed on Rust, which I use in the current iteration of my language. <br><br>
+        Below there are two pictures: The one up top shows written GScript code and the one below shows the output in the console.
+      </p>
+      <img style="width: 25vw; height: auto;" class="border border-dark border-3 my-4"src="img/projects1.png">
+      <img style="width: 60vw; height: auto;"class="border border-dark border-3 my-4"src="img/projects2.png">
+      <p>As you can see, my language supports math and printing to the console. It evaluated a + b * a correctly at 140. But there's a whole lot
+        more it supports, too! To give an overview, you can evaluate basic math and boolean expressions, define variables, define functions, define
+        structures, have conditional statements, have iteration statements, and have lists! With these features, and with the help of some GScript
+        built in functions, it's possible to make a simple guessing game! 
+        <br><br>
+        Below is a preview of some of the code and then some output for this game.
+      </p>
+      <img style="width: 45vw; height: auto;" class="border border-dark border-3 my-4"src="img/projects3.png">
+      <img style="width: 35vw; height: auto;"class="border border-dark border-3 my-4"src="img/projects4.png">
+      <p>Pretty cool, right? I used to love playing around with my programming language and seeing what kinds of games along the lines of the 
+        guessing game I could make. For example, I also made a rock-paper-scissors game to play either with another person or against the computer.
+        <br><br>
+        I'll show one more advanced feature of my language. This feature represents a huge challenge I had while creating the language, which is the
+        ability to endlessly evaluate bracket and/or dot syntax for lists and/or objects respectively. See below: 
+      </p>
+      <img style="width: 45vw; height: auto;"class="border border-dark border-3 my-4"src="img/project5.png">
+      <img style="width: 35vw; height: auto;"class="border border-dark border-3 my-4"src="img/project6.png">
+      <p>Here I'm creating an object and a list and referencing them in a sequential way. Implementing this functionality took quite a lot of thinking
+        and constant debugging for it to work as intended. <br><br>
+        As for the inner workings of the language, it's programmed in Rust as said before, using a recursive construct called an Abstract Syntax Tree (AST).
+        There are three parts: the lexer, the parser, and the interpreter. The lexer breaks the GScript file into tokens, the parser turns these tokens into
+        AST nodes, and the interpreter basically looks at each of these AST nodes and executes whatever behavior they encapsulate.<br><br>
+        Below is a sneak peek of some of the implementation of the visitor.
+      </p>
+      <img style="width:60vw; height:auto;" class="border border-dark border-3 my-4"src="img/projects7.png">
+      <p>And that's basically it for GScript (for now). I'm constantly trying to improve it and add new features. Next in the works 
+        is to implement more advanced dot-syntax for primitive types and strings. If you want to see more and keep tracking my progress, 
+        check out the GScript repository in my GitHub on my "Contact Me" page!
+      </p>
+      
+    </div>
+  </div>
+  <div class="container border border-dark border-4 my-5">
+    <h2> Discovery Project: Environmental Condition Sensor </h2>
+    <p>(Work in progress)</p>
+  </div>
+</section>
+</main>
+
+
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2026 Gokce Onal</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
